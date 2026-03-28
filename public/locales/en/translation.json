@@ -981,9 +981,13 @@
     "searchFunds": "Search Funds",
     "fundName": "Fund Name",
     "fundId": "Fund (Reference) ID",
+    "enterFundName": "Enter Fund Name",
+    "enterFundId": "Enter Fund ID",
     "taxDeductible": "Tax Deductible",
     "default": "Default",
+    "defaultFund": "Default Fund",
     "archived": "Archived",
+    "unarchive": "Unarchive",
     "fundCreate": "Create Fund",
     "fundUpdate": "Update Fund",
     "fundDelete": "Delete Fund",
@@ -1009,6 +1013,8 @@
     "editCampaign": "Edit Campaign",
     "searchCampaigns": "Search Campaigns",
     "campaignName": "Campaign Name",
+    "manageFundCampaign": "Manage Fund Campaign",
+    "createFundCampaign": "Create Fund Campaign",
     "campaignOptions": "Options",
     "fundingGoal": "Funding Goal",
     "progress": "Progress",
@@ -1038,7 +1044,10 @@
     "dateRangeRequired": "Please select a valid date range",
     "campaignNameRequired": "Campaign name is required",
     "invalidDate": "Invalid date selected",
-    "endDateBeforeStart": "End date cannot be before start date"
+    "endDateBeforeStart": "End date cannot be before start date",
+    "enterCampaignName": "Enter Campaign Name",
+    "enterStartDate": "Enter Start Date",
+    "enterEndDate": "Enter End Date"
   },
   "pledges": {
     "title": "Fund Campaign Pledges",
@@ -2202,6 +2211,7 @@
     "campaignStatus": "Status",
     "fundGoal": "Fund Goal",
     "percentRaised": "% Raised",
+    "campaignProgress": "Campaign progress: {{percentage}}%",
     "createFirstCampaign": "Create your first fundraising campaign to see it here.",
     "campaignEnded": "Campaign ended"
   },

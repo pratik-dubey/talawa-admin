@@ -980,9 +980,13 @@
     "createFund": "创建基金",
     "fundName": "基金名称",
     "fundId": "基金（参考）ID",
+    "enterFundName": "输入基金名称",
+    "enterFundId": "输入基金 ID",
     "taxDeductible": "税前扣除",
     "default": "默认",
+    "defaultFund": "默认基金",
     "archived": "已归档",
+    "unarchive": "取消归档",
     "fundCreate": "创建基金",
     "fundUpdate": "更新基金",
     "fundDelete": "删除基金",
@@ -1007,6 +1011,8 @@
   "fundCampaign": {
     "title": "募捐活动",
     "campaignName": "活动名称",
+    "manageFundCampaign": "管理募捐活动",
+    "createFundCampaign": "创建募捐活动",
     "campaignOptions": "选项",
     "fundingGoal": "资金目标",
     "progress": "进度",
@@ -1038,7 +1044,11 @@
     "dateRangeRequired": "请选择有效的日期范围",
     "campaignNameRequired": "活动名称是必填项",
     "invalidDate": "选择的日期无效",
-    "endDateBeforeStart": "结束日期不能早于开始日期"
+    "endDateBeforeStart": "结束日期不能早于开始日期",
+    "enterCampaignName": "输入活动名称",
+    "enterStartDate": "输入开始日期",
+    "enterEndDate": "输入结束日期",
+    "selectCurrency": "选择货币"
   },
   "pledges": {
     "createFailed": "创建认捐失败",
@@ -2213,6 +2223,7 @@
     "campaignStatus": "状态",
     "fundGoal": "筹款目标",
     "percentRaised": "% 已筹集",
+    "campaignProgress": "活动进度：{{percentage}}%",
     "createFirstCampaign": "创建您的第一个筹款活动以在此处查看。",
     "campaignEnded": "活动已结束",
     "amountRaised": "已筹集金额",
