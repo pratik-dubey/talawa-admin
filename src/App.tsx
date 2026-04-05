@@ -119,7 +119,6 @@ const OAuthCallbackPage = lazy(
   () => import('components/Auth/OAuthCallback/OAuthCallback'),
 );
 
-const { setItem } = useLocalStorage();
 const PUBLIC_ROUTES = new Set([
   '/',
   '/register',
@@ -157,6 +156,7 @@ const isPublicRoute = (path: string) =>
 
 function App(): React.ReactElement {
   const location = useLocation();
+  const { setItem } = useLocalStorage();
   const isPublic = isPublicRoute(location.pathname);
   const { data, loading } = useQuery(CURRENT_USER, {
     skip: isPublic, // Skip the query on public routes
