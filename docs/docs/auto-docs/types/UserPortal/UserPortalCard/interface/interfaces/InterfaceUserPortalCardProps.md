@@ -83,3 +83,5 @@ Defined in: [src/types/UserPortal/UserPortalCard/interface.ts:14](https://github
 Defined in: [src/types/UserPortal/UserPortalCard/interface.ts:20](https://github.com/PalisadoesFoundation/talawa-admin/blob/main/src/types/UserPortal/UserPortalCard/interface.ts#L20)
 
 Visual density preset controlling padding and spacing
+
+
