@@ -1,7 +1,7 @@
 import React, { lazy, Suspense, useEffect, useMemo } from 'react';
 import { Route, Routes, useLocation } from 'react-router';
 import { useQuery, useApolloClient } from '@apollo/client';
-import useLocalStorage from 'utils/useLocalstorage';
+import { PREFIX, setItem } from 'utils/useLocalstorage';
 import SecuredRoute from 'components/AdminPortal/SecuredRoute/SecuredRoute';
 import SecuredRouteForUser from 'components/UserPortal/SecuredRouteForUser/SecuredRouteForUser';
 import OrganizationFundCampaign from 'screens/AdminPortal/OrganizationFundCampaign/OrganizationFundCampaigns';
@@ -156,7 +156,6 @@ const isPublicRoute = (path: string) =>
 
 function App(): React.ReactElement {
   const location = useLocation();
-  const { setItem } = useLocalStorage();
   const isPublic = isPublicRoute(location.pathname);
   const { data, loading } = useQuery(CURRENT_USER, {
     skip: isPublic, // Skip the query on public routes
@@ -200,15 +199,15 @@ function App(): React.ReactElement {
     if (isPublic) return;
     if (!loading && data?.user) {
       const auth = data.user;
-      setItem('IsLoggedIn', 'TRUE');
-      setItem('id', auth.id);
-      setItem('name', auth.name);
-      setItem('email', auth.emailAddress);
-      setItem('role', auth.role);
+      setItem(PREFIX, 'IsLoggedIn', 'TRUE');
+      setItem(PREFIX, 'id', auth.id);
+      setItem(PREFIX, 'name', auth.name);
+      setItem(PREFIX, 'email', auth.emailAddress);
+      setItem(PREFIX, 'role', auth.role);
       // setItem('UserImage', auth.avatarURL|| "");
       initializeSubscriptions();
     }
-  }, [data, loading, setItem, isPublic]);
+  }, [data, loading, isPublic]);
 
   return (
     <ErrorBoundaryWrapper
